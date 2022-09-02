@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Open+Sans:wght@300&family=Poppins:wght@300;400;500&display=swap");
+
+:root{
+    --lg-font: 'Kaiser Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink:#fc657e;
+}
+
+body{
+    font-family: var(--sm-font);
+}
+
+.text-primary i{
+    color: var(--pink) !important;
+}
+
+
+/* SUPERIOR MENU */
+#shopping__car__number{
+    background-color: var(--pink) !important;
+}
+
+.btn:not(.nav-btns button){
+    background-color: white;
+    color: rgb(93, 91, 91);
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: 1px solid rgb(93, 91, 91);
+}
+
+.btn:not(.nav-btns button):hover{
+    background-color: var(--pink);
+    color: white;
+    border-color: var(--pink);
+}
+
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img{
+    width:40px;
+}
+
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family: var(--lg-font)
+}
+
+.nav-link:hover{
+    color: var(--pink) !important;
+}
+
+.nav-item{
+    border-bottom: 0.5px solid rgba(0,0,0,0.05);
+}
+
+/* /SUPERIOR MENU */
+
+
+
+/* HEADER */
+#header{
+    background: url(../multimedia/Others/banner.jpg) top/cover no-repeat;
+}
+
+.carousel-inner h2{
+    font-size: 32px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.carousel-item .btn{
+    border-color: white !important;
+}
+
+.carousel-item .btn:hover{
+    border-color: var(--pink) !important;
+}
+
+
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* /HEADER */
+
+
+
+/* COLLECTION */
+
+.active-filter-btn{
+    background-color: var(--pink) !important;
+    color: #fff !important;
+    border-color: var(--pink) !important;
+}
+
+.filter-button-group btn{
+    background-color: var(--pink) !important;
+    color: #fff !important;
+    border-color: var(--pink) !important;
+}
+
+
+#spanDivCollection{
+    background-color: var(--pink)!important;
+}
+
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+
+/* /COLLECTION */
+
+
+ /* PRODUCTS  */
+
+ .special-img span{
+    top: 20px;
+    right: 20px;
+ }
+ 
+ .special-list .btn{
+    padding: 8px 20px !important;
+ }
+
+ .special-img img{
+    transition: all 0.3s ease;
+ }
+
+ .special-img img:hover{
+    transform: scale(1.2);
+ }
+/* / PRODUCTS  */
+
+
+/* ABOUT US */
+#about_us {
+    background: url(../multimedia/Beverages/1.jpg) center/cover no-repeat;
+}
+
+#about_us .row{
+    min-height:60vh;
+}
+
+.about_us_content span{
+    font-size: 28px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.about_us_content h2{
+    font-weight: bold;
+    font-size: 45px;
+    font-family: var(--lg-font);
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.about_us_content .btn{
+    border-color:  transparent !important;
+}
+
+
+/* /ABOUT US */
+
+
+
+
+/* CONTACT */
+#contact{
+    background-color: rgba(179, 179, 179, 0.05) ;
+}
+
+#contact p{
+    max-width: 600px;
+}
+
+#contact .input-group{
+    max-width: 500px;
+}
+
+#contact .form-control{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#contact .btn{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+#contact .btn:hover{
+    background-color: #000;
+    border-color: #000;
+}
+/* / CONTACT */
+
+
+
+/* FOOTER */
+footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+
+#item_li_footer{
+    transition: all 0.4s ease;
+}
+#item_li_footer:hover{
+    color: var(--pink) !important;
+}
+
+/* / FOOTER */
+
+
+
+/* Media query */
+@media (min-width:992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}

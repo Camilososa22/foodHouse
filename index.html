@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Foods</title>
+    <!-- CSS VINCULATION -->
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- BOOTSTRAP-CSS VINCULATION -->
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <!-- FONT AWESOME VINCULATION -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex justify-content-between align-items-center order-lg-0"
+          href="index.html"
+        >
+          <img
+            src="multimedia/Others/shopping_logo.png"
+            alt="site icon"
+            class="icon__navbar"
+          />
+          <span class="text-uppercase fw-lighter ms-2">Food House</span>
+        </a>
+        <div class="order-lg-2 nav-btns">
+          <button type="button" class="btn position-relative">
+            <i class="fa fa-shopping-cart"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge bg-primary"
+              id="shopping__car__number"
+              >0</span
+            >
+          </button>
+          <button type="button" class="btn position-relative">
+            <i class="fa fa-heart"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge bg-primary"
+              id="shopping__car__number"
+              >0</span
+            >
+          </button>
+          <button type="button" class="btn position-relative">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#header">
+                Inicio</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#collection"
+                >Catálogo</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#products"
+                >Destacados</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#about_us"
+                >Sobre nosotros</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#services"
+                >Servicios</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2 border-0">
+              <a class="nav-link text-uppercase text-dark" href="#contact"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /NAVBAR -->
+
+    <!-- HEADER -->
+    <header
+      id="header"
+      class="vh-100 carousel slide"
+      style="padding-top: 104px"
+    >
+      <div class="container h-100 d-flex align-items-center carousel-inner">
+        <div class="text-center carousel-item active">
+          <h2 class="text-capitalize text-white">Delicias para el paladar</h2>
+          <h1 class="text-uppercase py-2 fw-bold text-white">
+            Disfruta de los mejores precios
+          </h1>
+          <a href="#collection" class="btn mt-3 text-uppercase">Ver catálogo</a>
+        </div>
+        <div class="text-center carousel-item">
+          <h2 class="text-capitalize text-white">Comidas especiales</h2>
+          <h1 class="text-uppercase py-2 fw-bold text-white">
+            Disfruta de los mejores platos
+          </h1>
+          <a href="#collection" class="btn mt-3 text-uppercase"
+            >Comprar ahora</a
+          >
+        </div>
+        <div class="text-center carousel-item">
+          <h2 class="text-capitalize text-white">Comidas rápidas</h2>
+          <h1 class="text-uppercase py-2 fw-bold text-white">
+            Disfruta de una comida rápida
+          </h1>
+          <a href="#collection" class="btn mt-3 text-uppercase">Comprar ahora</a>
+        </div>
+        <div class="text-center carousel-item">
+          <h2 class="text-capitalize text-white">Combos</h2>
+          <h1 class="text-uppercase py-2 fw-bold text-white">
+            Disfruta un delicioso combo
+          </h1>
+          <a href="#collection" class="btn mt-3 text-uppercase"
+            >Comprar ahora</a
+          >
+        </div>
+        <div class="text-center carousel-item">
+          <h2 class="text-capitalize text-white">Postres</h2>
+          <h1 class="text-uppercase py-2 fw-bold text-white">
+            Degusta los mejores postres
+          </h1>
+          <a href="#collection" class="btn mt-3 text-uppercase"
+            >Comprar ahora</a
+          >
+        </div>
+        <div class="text-center carousel-item">
+          <h2 class="text-capitalize text-white">Bebidas</h2>
+          <h1 class="text-uppercase py-2 fw-bold text-white">
+            Sacia tu sed con una de nuestras bebidas
+          </h1>
+          <a href="#collection" class="btn mt-3 text-uppercase">Comprar ahora</a>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#header"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#header"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- COLLECTION -->
+    <section id="collection" class="py-5">
+      <div class="container">
+        <div class="title text-center">
+          <h2 class="position-relative d-inline-block">Catálogo</h2>
+        </div>
+        <div class="row g-0">
+          <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+            <button type="button" class="btn m-2 active-filter-btn" data-filter="*">
+              Todo
+            </button>
+            <button type="button" class="btn m-2 button_menu" data-filter=".special">Especiales</button>
+            <button type="button" class="btn m-2 button_menu" data-filter=".fast">Rápidas</button>
+            <button type="button" class="btn m-2 button_menu" data-filter=".combos">Combos</button>
+            <button type="button" class="btn m-2 button_menu" data-filter=".postres">Postres</button>
+            <button type="button" class="btn m-2 button_menu" data-filter=".beverages">Bebidas</button>
+          </div>
+
+          <div class="collection-list mt-4 row gx-0 gy-3">
+
+            <!-- SPECIAL_FOODS -->
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 special">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Special_food\grilled_chicken.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Pollo asado</p>
+                <span class="fw-bold">$ 90.000</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 special">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Special_food\grilled_meat.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Carne asada</p>
+                <span class="fw-bold">$ 30.000</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 special">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Special_food\lasagna.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Lasagna</p>
+                <span class="fw-bold">$ 35.000</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 special">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Special_food\mixed_minced.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Picada de carnes</p>
+                <span class="fw-bold">$ 90.000</span>
+              </div>
+            </div>
+
+            <!-- FAST_FOOD -->
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 fast">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Fast_food\burger.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Hamburguesa</p>
+                <span class="fw-bold">$ 15.000</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 fast">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Fast_food\hot_dog.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Hot dog</p>
+                <span class="fw-bold">$ 14.000</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 fast">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Fast_food\salchipapas.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Salchipapas</p>
+                <span class="fw-bold">$ 17.000</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 fast">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Fast_food\tacos.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Tacos</p>
+                <span class="fw-bold">$ 12.000</span>
+              </div>
+            </div>
+
+            <!-- FOOD_COMBO -->
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 combos">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Food_combo\combo_burger.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Combo de hamburguesa</p>
+                <span class="fw-bold">$ 28.000</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 combos">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Food_combo\combo_chicken_wings.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Combo de pollo</p>
+                <span class="fw-bold">$ 45.000</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 combos">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Food_combo\combo_pizza.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Combo de pizza</p>
+                <span class="fw-bold">$ 32.000</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 combos">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Food_combo\combo_tacos.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Combo de tacos</p>
+                <span class="fw-bold">$ 35.000</span>
+              </div>
+            </div>
+
+            <!-- FOOD_POSTRE -->
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 postres">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Food_postre\coffe_dessert.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Postre de café</p>
+                <span class="fw-bold">$ 8.000</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 postres">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Food_postre\oreo_dessert.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Postre de oreo</p>
+                <span class="fw-bold">$ 8.000</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 postres">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Food_postre\muffin.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Muffin de fresa</p>
+                <span class="fw-bold">$ 7.000</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 postres">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Food_postre\cup_cake.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Cup Cake</p>
+                <span class="fw-bold">$ 7.000</span>
+              </div>
+            </div>
+
+            <!-- BEVERAGES -->
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 beverages">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Beverages\beer.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Cerveza</p>
+                <span class="fw-bold">$ 5.000</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 beverages">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Beverages\coca_cola.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Coca cola</p>
+                <span class="fw-bold">$ 3.000</span>
+              </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 beverages">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Beverages\pepsi.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Pepsi</p>
+                <span class="fw-bold">$ 3.000</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 beverages">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Beverages\sprite.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Sprite</p>
+                <span class="fw-bold">$ 3.000</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 beverages">
+              <div class="collection-img position-relative">
+                <img
+                  src="multimedia\Beverages\orange_juice.png"
+                  class="w-100"
+                />
+                <span
+                  class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center"
+                  id="spanDivCollection"
+                  >Hot</span
+                >
+              </div>
+
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="text-primary">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+                <p class="text-capitalize my-1">Jugo de naranja</p>
+                <span class="fw-bold">$ 4.000</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- /COLLECTION -->
+
+
+    <!-- PRODUCTS -->
+        <section id="products" class="py-5">
+          <div class="container">
+            <div class="title text-center py-5">
+              <h2 class="position-relative d-inline-block">Productos destacados</h2>
+            </div>
+            <div class="special-list row g-0">
+              <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="special-img position-relative overflow-hidden">
+                  <img src="multimedia\Special_food\grilled_chicken.png" class="w-100">
+                  <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                    <i class="fas fa-heart"></i>
+                  </span>
+                </div>
+                <div class="text-center">
+                  <p class="text-capitalize mt-3 mb-1">Pollo asado</p>
+                  <span class="fw-bold d-block">$ 90.000</span>
+                  <a href="#" class="btn btn-primary mt-3">Agregar al carrito</a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="special-img position-relative overflow-hidden">
+                  <img src="multimedia\Fast_food\burger.png" class="w-100">
+                  <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                    <i class="fas fa-heart"></i>
+                  </span>
+                </div>
+                <div class="text-center">
+                  <p class="text-capitalize mt-3 mb-1">Hamburguesa</p>
+                  <span class="fw-bold d-block">$ 15.000</span>
+                  <a href="#" class="btn btn-primary mt-3">Agregar al carrito</a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="special-img position-relative overflow-hidden">
+                  <img src="multimedia\Food_combo\combo_tacos.png" class="w-100">
+                  <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                    <i class="fas fa-heart"></i>
+                  </span>
+                </div>
+                <div class="text-center">
+                  <p class="text-capitalize mt-3 mb-1">Combo de tacos</p>
+                  <span class="fw-bold d-block">$ 35.000</span>
+                  <a href="#" class="btn btn-primary mt-3">Agregar al carrito</a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="special-img position-relative overflow-hidden">
+                  <img src="multimedia\Food_postre\muffin.png" class="w-100">
+                  <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                    <i class="fas fa-heart"></i>
+                  </span>
+                </div>
+                <div class="text-center">
+                  <p class="text-capitalize mt-3 mb-1">Muffin de fresa</p>
+                  <span class="fw-bold d-block">$ 7.000</span>
+                  <a href="#" class="btn btn-primary mt-3">Agregar al carrito</a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="special-img position-relative overflow-hidden">
+                  <img src="multimedia\beverages\coca_cola.png" class="w-100">
+                  <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                    <i class="fas fa-heart"></i>
+                  </span>
+                </div>
+                <div class="text-center">
+                  <p class="text-capitalize mt-3 mb-1">Coca cola</p>
+                  <span class="fw-bold d-block">$ 3.000</span>
+                  <a href="#" class="btn btn-primary mt-3">Agregar al carrito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    <!-- / PRODUCTS -->
+
+    
+    
+    <!-- ABOUT US -->
+        <section id="about_us" class="py-5">
+          <div class="container">
+            <div class="row d-flex align-items-center text-center">
+            <div class="about_us_content">
+              <span class="text-white">¿Quiénes somos?</span>
+              <h2 class="mt-2 mb-4 text-white">Somos un destacado restaurante con gran variedad de consumibles y licores</h2>
+              <a href="#collection" class="btn">Comprar ahora</a>
+            </div>  
+            </div>
+          </div>
+        </section>
+
+    <!-- /ABOUT US -->
+
+
+    <!-- SERVICES -->
+        <section id="services" class="py-5">
+          <div class="container">
+            <div class="title text-center py-5">
+              <h2 class="position-relative d-inline-block">Servicios</h2>
+            </div>
+            <div class="row g-3">
+              <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                <img src="multimedia/Beverages/beverages.jpg" alt="">
+                <div class="card-body px-0">
+                  <h4 class="card-title">Licores TOP</h4>
+                  <p class="card-text mt-3 text-muted">Contamos con los mejores licores de la zona, con más de 20 tipos de cervezas y alcoholes de las marcas con mayor reconocimiento.</p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <span class="fw-bold">Cortesía:</span> Local
+                    </small>
+                  </p>
+                  <a href="#collection" class="btn"> Ver mas</a>
+                </div>
+              </div>
+
+              <div class="card border-0 col-md-6 col-lg-4 bg-transparent">
+                <img src="multimedia/Fast_food/fast_food.jpg" alt="">
+                <div class="card-body px-0">
+                  <h4 class="card-title">Exquisitas rápidas</h4>
+                  <p class="card-text mt-3 text-muted">Destacamos por nuestra calidad de comida rápida en la zona para brindar la mejor experiencia al cliente a la hora de elegirnos.</p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <span class="fw-bold">Cortesía:</span> Local / Domicilio
+                    </small>
+                  </p>
+                  <a href="#collection" class="btn"> Ver mas</a>
+                </div>
+              </div>
+
+              <div class="card border-0 col-md-6 col-lg-4 bg-transparent">
+                <img src="multimedia/Special_food/special_food.jpg" alt="">
+                <div class="card-body px-0">
+                  <h4 class="card-title">Algo especial</h4>
+                  <p class="card-text mt-3 text-muted">Para tus momentos especiales te ofrecemos comidas especiales de la casa, con la mejor sazón y el toque secreto local.</p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <span class="fw-bold">Cortesía:</span> Local / Domicilio
+                    </small>
+                  </p>
+                  <a href="#collection" class="btn"> Ver mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    <!-- / SERVICES -->
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <div class="title text-center pt-3 pb-5">
+            <h2 class="position-relative d-inline-block ms-4">¡Contáctanos!</h2>
+          </div>
+          <p class="text-center text-muted">Envíanos un mensaje a nuestro correo eléctronico con tus datos y con mucho gusto te contactamos.</p>
+          <div class="input-group mb-3 mt-3">
+            <input type="text" class="form-control" placeholder="Escribe tu mensaje y datos aquí">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- / CONTACT -->
+
+    <!-- FOOTER -->
+    <footer class="bg-dark py-5">
+      <div class="container">
+        <div class="row text-white g-4">
+          <div class="col-md-6 col-lg-3">
+            <a href="index.html" class="text-decoration-none brand fw-light text-white"><h5>Inicio</h5></a>
+            <p class="text-white text-muted">E-commerce web del restaurante Food House, enfocado a dar a conocer el producto a los usuarios y próximamente a las ventas domiciliarias en la zona local.</p>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light brand">Links</h5>
+            <ul class="list-unstyled">
+              <li class="my-3">
+                <a href="#header" class="text-white text-decoration-none text-muted" id="item_li_footer">
+                  <i class="fas fa-chevron-right me-1"></i> Inicio
+                </a>
+              </li>
+              <li class="my-3">
+                <a href="#collection" class="text-white text-decoration-none text-muted" id="item_li_footer">
+                  <i class="fas fa-chevron-right me-1"></i> Catálogo
+                </a>
+              </li>
+              <li class="my-3">
+                <a href="#products" class="text-white text-decoration-none text-muted" id="item_li_footer">
+                  <i class="fas fa-chevron-right me-1"></i> Destacados
+                </a>
+              </li>
+              <li class="my-3">
+                <a href="#about_us" class="text-white text-decoration-none text-muted" id="item_li_footer">
+                  <i class="fas fa-chevron-right me-1"></i> Sobre Nosotros
+                </a>
+              </li>
+              <li class="my-3">
+                <a href="#services" class="text-white text-decoration-none text-muted" id="item_li_footer">
+                  <i class="fas fa-chevron-right me-1"></i> Servicios
+                </a>
+              </li>
+              <li class="my-3">
+                <a href="#contact" class="text-white text-decoration-none text-muted" id="item_li_footer">
+                  <i class="fas fa-chevron-right me-1"></i> Contacto
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5 class="mb-3 fw-light brand">Contacta al desarrollador</h5>
+            <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+              <a href="https://github.com/Camilososa22" target="_blank" class="text-white text-decoration-none text-muted" id="item_li_footer">
+              <span class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg> 
+              </span>
+              <span class="fw-light">GitHub</span>
+            </a>
+            </div>
+
+            <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+              <a href="https://www.linkedin.com/in/camilo-andrés-estrada-sosa-1641461b0/" target="_blank" class="text-white text-decoration-none text-muted" id="item_li_footer">
+              <span class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                </svg> 
+              </span>
+              <span class="fw-light">LinkedIn</span>
+            </a>
+            </div>
+
+            <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+              <a href="mailto:camilososa22@gmail.com?subject=Interesado%20en%20tus%20servicios" target="_blank" class="text-white text-decoration-none text-muted" id="item_li_footer">
+              <span class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                </svg>
+              </span>
+              <span class="fw-light">Envía un correo aqui</span>
+            </a>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-3">
+            <h5 class="mb-3 fw-light brand">Información de contacto</h5>
+            <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+              <span class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+              </span>
+              <span class="fw-light">300 261 9180</span>
+            </div>
+
+            <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+              <span class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg>
+              </span>
+              <span class="fw-light">Carrera 22F #33-27 / Local 101</span>
+            
+            </div>
+
+            <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+              <span class="me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                </svg>
+              </span>
+              <span class="fw-light">foodhouseoficial@gmail.com</span>
+            
+            </div>
+          </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- / FOOTER -->
+
+        <!-- JQUERY VINCULATION -->
+        <script src="scripts/jquery-3.6.0.js"></script>
+    <!-- ISOTOPE VINCULATION -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- JS VINCULATION -->
+    <script src="scripts/script.js"></script>
+    <!-- BOOTSTRAP-CSS VINCULATION -->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
